@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gardening Your Garden</title>
+        <link rel="stylesheet" href="mainstyle.css" type="text/css">
+    </head>
+    <body>
+        
+        <header>
+        <h1>Talk about Your Garden</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="subpage1tips.html">Current Season Gardening Tips</a></li>
+                <li><a href=subpage2myGarden.html>My 2020 Garden</a></li>
+                <li><a href=subpage3yourGarden.html class="currentLocation">Talk about Your Garden</a></li>
+            </ul>
+        </nav>
+        
+        <div class="subheading">
+            <h2>Fill out the form below to tell me about your gardening experiences!</h2>
+        </div>
+        
+        <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+            <fieldset>
+                <label>Your Name:
+                    <input type="text" name="name" size="30" maxlength="100"></label>
+                <br />
+                <br />
+                <p>Pick a season:
+                    <label>
+                        <input type="radio" name="season" value="spring">Spring</label>
+                    <label>
+                        <input type="radio" name="season" value="summer">Summer</label>
+                    <label>
+                        <input type="radio" name="season" value="fall">Fall</label>
+                    <label>
+                        <input type="radio" name="season" value="winter">Winter</label>
+                </p>
+                <br />
+                <label>Which vegetable do you want to talk about?
+                    <input type="text" name="vegetable" size="30" maxlength="100"></label>
+                <br />
+                <br />
+                <p>Tell me about your experience growing this vegetable!
+                    <br />
+                    <label>
+                        <textarea rows="5" cols="70"></textarea></label>
+                </p>
+                <label>
+                    <input type="submit" value="Submit"></label>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
