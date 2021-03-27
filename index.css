@@ -1,0 +1,49 @@
+/* Wrapper holding rest of divs */
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Div boxes */
+.div {
+    border: 2px solid #14213d;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#intro {
+    grid-column: 1/4;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#intro p {
+    text-align: left;
+}
+
+.div a:link {
+    text-decoration: none;
+}
+
+.div a:hover {
+    text-decoration: underline;
+}
+
+.div a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+.div:hover {
+    background-color: #cccccc;
+}
+
+/* Profile picture */
+img {
+    width: 300px;
+    height: auto;
+}

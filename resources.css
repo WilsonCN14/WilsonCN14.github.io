@@ -1,0 +1,35 @@
+/* Placement of divs */
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Styling divs */
+.div {
+    border: 2px solid #14213d;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.div:hover {
+    background-color: #cccccc;
+}
+
+.div h2 {
+    text-align: center;
+}
+
+/* Styling lists */
+div li {
+    padding: 10px;
+}
+
+.div a:hover {
+    font-weight: bold;
+}
+
+.div a:visited {
+    text-decoration: none;
+    color: blue;
+}
