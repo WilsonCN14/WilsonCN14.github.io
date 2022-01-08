@@ -9,49 +9,46 @@
     <link rel="stylesheet" href="../styles/projects.css">
 </head>
 <body>
-    <header>
+    <div class="pagewrap">
         <nav>
-            <ul>
-                <li><a href="../index.html">Homepage</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="resources.html">Favorite Resources</a></li>
-                <li><a href="projects.html" class="current">Projects</a></li> 
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
+            <a href="../index.html">Christina's Website</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="projects.html" class="current">Projects</a>
+            <a href="resources.html">Favorite Resources</a>
+            <a href="resume.html">Resume</a>
+            <p>&copy; Christina Wilson January 7, 2022</p>
         </nav>
-        
-        <h1>My Projects</h1>
-    </header>
+    
+        <div class="maincontent">
+            <h1>My Projects</h1>
 
-    <div id="wrapper">
-        <div class="div">
-            <h2>Current Project</h2>
-            <ul>
-                <li>My latest project has been this website, which is finally done!</li>
-                <li>For my next project, I have two ideas that I keep going back and forth on.</li>
-                <ul>
-                    <li>One idea is a gardening app. Every winter, I plan out my garden for spring and I have a hard time mapping out what I am going to plant and whaere I want to plant it. There are gardening apps already available that allows users to draw out their garden and put pictures of the vegetables they want on the garden. However, I haven't found one to my liking so I have been considering making one myself.</li>
-                    <li>Another idea is for a video game. I love video games and have wanted to make one for years but did not have the confidence to even try. I have talked to several people who informed me that even if it does not turn out great, making a video game myself would be an excellent learning experience so now I feel empowered enough to try. My favorite genre is fantasy RPGs so I would likely make in that genre.</li>
-                </ul>
-            </ul>
-        </div>
+            <div id="projectswrapper">
+                <div class="project">
+                    <img src="../images/Mastermind.jpg" style="width: 100%" alt="Mastermind image">
+                    <h2 class="projectname">Mastermind</h2>
+                    <div class="projectlanguage">Programming Language: Python</div>
+                    <div class="projectdescription">
+                        <p>Command line game where computer randomly places 4 colored pegs in a row and the player has 6 guesses to guess which which color and which order each peg is in.</p>
+                        <p>Details on rules are on <a href="https://en.wikipedia.org/wiki/Mastermind_(board_game)">Wikipedia</a></p>
+                    </div>
+                    <div class="projectcode">View code on <a href="https://github.com/WilsonCN14/Mastermind">GitHub</a></div>
+                </div>
 
-        <div class="div">
-            <h2><a href="projects/gardening/homepage.html">Christina's Gardening Website</a></h2>
-            <ul>
-                <li>For my Web Development course, I created a toy gardening website. It contains pictures of my garden, a fake form to sumbit information, and a picture carousel on the homepage.</li>
-                <li>Click <a href="https://github.com/WilsonCN14/Gardening-Website">here</a> to check out my code on github.</li>
-            </ul>
-        </div>
+                <div class="project">
+                    <img src="../images/Gardening Website.jpg" style="width: 100%" alt="Mastermind image">
+                    <h2 class="projectname">Gardening Website</h2>
+                    <div class="projectlanguage">Programming Language: HTML/CSS/JavaScript</div>
+                    <div class="projectdescription">
+                        <p>Toy gardening website containing pictures of my garden, a fake form to submit information, and a picture carousel on the homepage></p>
+                    </div>
+                    <div class="projectcode">View code on <a href="https://github.com/WilsonCN14/Gardening-Website">GitHub</a></div>
+                </div>
 
-        <div class="div">
-            <h2>Mastermind</h2>
-            <ul>
-                <li>I created a Mastermind board game using Python. In the game Mastermind, the computer randomly places four colored pegs in a row and the player has six guesses to guess which color and which order each peg is in. To help the player guess the correct colored sequence, after the player makes a guess, the computer shows the player a number of black pegs that represents the number of pegs in the correct color and position and a number of white pegs that represents the number of pegs in the correct color but not the correct position. Wikipedia has an excellent article on it <a href="https://en.wikipedia.org/wiki/Mastermind_(board_game)">here</a></li>
-                <li>In my game, the player can either play the game on the command line or watch the computer play against itself.</li>
-                <li>The code can be found <a href="https://github.com/WilsonCN14/Mastermind">on GitHub</a>.</li>
-            </ul>
+            </div>
+    
         </div>
+    
     </div>
+
 </body>
 </html>

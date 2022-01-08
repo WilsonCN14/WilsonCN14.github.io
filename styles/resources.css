@@ -1,7 +1,8 @@
 /* Placement of divs */
-#wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#resourceswrapper {
+    width: 75%;
+    margin: auto;
+    display: flex;
 }
 
 /* Styling divs */
@@ -27,9 +28,4 @@ div li {
 
 .div a:hover {
     font-weight: bold;
-}
-
-.div a:visited {
-    text-decoration: none;
-    color: blue;
 }
