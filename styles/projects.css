@@ -8,6 +8,7 @@
     flex: 1;
     padding-right: 3%;
     padding-left: 3%;
+    border: 1px solid black;
 }
 
 img {
