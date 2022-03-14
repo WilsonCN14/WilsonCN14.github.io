@@ -8,4 +8,6 @@ Projects:
     - Websites:
         - Gardening web site
     - Unity:
-        - The Floor is Lava!
+        - Candy Catcher
+    - Flutter:
+        - Food Waste
