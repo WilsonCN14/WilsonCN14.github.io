@@ -4,46 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8eab1b87c1.js" crossorigin="anonymous"></script>
     <title>Christina Wilson's Website</title>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
-    <div class="pagewrap">
-        <nav>
-            <a href="index.html" class="current">Christina's Website</a>
-            <a href="/views/aboutme.html">About Me</a>
-            <a href="/views/projects.html">Projects</a>
-            <a href="/views/resources.html">Favorite Resources</a>
-            <a href="https://wilsoncn.hashnode.dev/">Go to Blog</a>
-            <a href="files/Resume.pdf">Download Resume</a>
-            <p>&copy; Christina Wilson 2022</p>
-        </nav>
+    <!-- ********** NAV BAR ********** -->
+    <nav>
+        <div class="navName">Christina Wilson</div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="#aboutMe">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="files/Resume.pdf">Resume</a></li>
+                <li><a href="https://wilsoncn.hashnode.dev/">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ********** ABOUT ME ********** -->
+    <section id="aboutMe">
+        <div class="profile">
+            <div class="profilePic">
+                <img src="images/profile-pic.jpg" alt="Profile picture of Christina Wilson">
+            </div>
+            <h2>Christina Wilson</h2>
+            <h3>Web Developer</h3>
+        </div>
+
+        <div class="info">
+            <h1>Christina Wilson's Portfolio</h1>
+
+            <div class="summary">
+                <h2>About Me</h2>
+                <p>I am a recent computer science graduate from Oregon State University seeking to enter the web development industry.</p>
+            </div>
     
-        <div class="maincontent">
-            <h1>Welcome to Christina Wilson's Website!</h1>
-
-            <div id="profilewrapper">
-                <div id="profilepic">
-                    <img src="/images/Profile pic.jpg" alt="Profile picture">
+            <div class="links">
+                <h2>You can find me here:</h2>
+                <ul>
+                    <li>WilsonCN14@gmail.com</li>
+                    <li><a href="https://www.linkedin.com/in/christinawilson/">LinkedIn</a></li>
+                    <li><a href="https://github.com/WilsonCN14">GitHub</a></li>
+                    <li><a href="https://wilsoncn.hashnode.dev/">Blog</a></li>
+                </ul>
+            </div>
+    
+            <div class="funFacts">
+                <h2>Fun Facts!</h2>
+    
+                <p>I have a bachelor's degree in Biology and a doctorate degree in Pharmacy. Switching to computer science has been a big career change but I have no regrets!</p>
+    
+                <p>Some of my hobbies include video games, gardening, and acrylic painting.</p>
+    
+                <div class="painting">
+                    <img src="images/passo-di-giau-painting-10-25-2021.jpg" alt="Christina Wilson's painting of Passo di Giau, a mountain pass in Italy">
+                    <p>Reference I used for painting: <a href="https://unsplash.com/photos/yJ_KZkPYTJM">Unsplash</a></p>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div id="info">
-                    <p>Hello! My name is Christina Wilson.</p>
-                    <p>I am a computer science student in Oregon State University's post-baccalaureate program set to graduate April 4, 2022.</p>
-                    <p>Jonesboro, AR</p>
-                    <p>WilsonCN14@gmail.com</p>
-                    <p><a href="https://www.linkedin.com/in/christinawilson/">LinkedIn</a></p>
-                    <p><a href="https://github.com/WilsonCN14">GitHub</a></p>
-                    <p><a href="https://wilsoncn.hashnode.dev/">Blog</a></p>
-                    <p>Download resume <a href="/files/Resume.pdf">here</a></p>
-                </div>
-        
+    <!-- ********** PROJECTS ********** -->
+    <section id="projects">
+        <h1>Projects</h1>
+
+        <div class="projectsWrapper">
+            <div class="project">
+                <img src="images/wedding-page.jpg" alt="Wedding invitation page with date of wedding and navigation bar to rest of page">
+                <h2>One Page Responsive Layout: Wedding Page</h2>
+                <p>Skills: HTML/CSS/JavaScript</p>
+                <p>Description: Wedding invitation page using flex box and media queries to fit different screen sizes. Contains an automatic picture carousel and a manual picture carousel.</p>
+                <p><a href="https://github.com/WilsonCN14/One-Page-Responsive-Layouts">View Code</a></p>
+                <p><a href="projects/wedding-page/index.html">View Layout</a></p>
             </div>
 
-        </div>
-        
-    </div>
+            <div class="project">
+                <img src="images/board-game-builder.jpg" alt="Main menu for Board Game Builder with options to play game or create game">
+                <h2>Board Game Builder</h2>
+                <p>Skills: Unity/C#</p>
+                <p>Description: 2D Unity game where the player can build a board game and then play it</p>
+                <p><a href="https://github.com/WilsonCN14/Board-Game-Builder">View Code</a></p>
+                <p><a href="https://play.unity.com/mg/other/builds-qr-2">Play Game</a></p>
+            </div>
 
+            <div class="project">
+                <img src="images/food-waste-homepage.jpg" alt="Phone app with a list of posts containing date and number of wasted food items">
+                <h2>Food Waste</h2>
+                <p>Skills: Flutter/Dart</p>
+                <p>Description: Mobile app where you keep track of food waste by taking pictures of food waste and uploading picture and information about it into Firestore</p>
+                <p><a href="https://github.com/WilsonCN14/Food_Waste">View Code</a></p>
+            </div>
+        </div>                
+    </section>
+
+    <!-- ********** SKILLS ********** -->
+    <section id="skills">
+        <h1>Skills</h1>
+
+        <div class="skillsWrapper">
+            <div class="skill">
+                <i class="fa-brands fa-python fa-4x"></i>
+                <h2>Python</h2>
+                <h3>Flask</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Christina Wilson 2022</p>
+    </footer>
 </body>
 </html>

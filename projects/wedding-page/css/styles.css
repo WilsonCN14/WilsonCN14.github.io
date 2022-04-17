@@ -1,0 +1,255 @@
+/* GLOBAL STYLES ******************************************
+*/
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+.heading {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.normalDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    color:rgb(37, 95, 161);
+}
+
+.items div {
+    margin: 50px;
+    width: 300px;
+    text-align: center;
+}
+
+.items h3 {
+    margin-top: 20px;
+}
+
+/* HEADER ******************************************
+*/
+html, body {
+    height: 100%; /* Needed to make header cover entire page */
+}
+
+header {
+    height: 100%;
+    position: relative;
+}
+
+header img {
+    display: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+    position: absolute;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Beau Rivage', cursive;
+}
+
+header h1 {
+    font-size: 12em;
+}
+
+header h2 {
+    font-size: 4em;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 25px 50px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav li a:hover {
+    color: blue;
+    background-color: white;
+}
+
+/* INVITATION ******************************************
+*/
+#invitation {
+    background-color: rgb(255, 255, 250);
+}
+
+/* OUR STORY ******************************************
+*/
+#ourStory {
+    background-image: url("../images/green-leaf-on-wood.jpg");
+    background-size: cover;
+    color: white;
+    padding: 100px 50px;
+}
+
+.carousel {
+    width: 50%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.chapter {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    display: none;
+}
+
+.date {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.story {
+    font-size: 1.25em;
+}
+
+.chapter div {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    color: rgb(133, 196, 255);
+}
+
+.prev, .next {
+    margin: 10px;
+}
+
+.prev:hover, .next:hover {
+    cursor: pointer;
+}
+
+
+/* EVENTS ******************************************
+*/
+#events {
+    background-color: rgb(228, 245, 251);
+}
+#events .items div {
+    margin: 25px;
+    width: 275px;
+}
+
+/* TRAVEL ******************************************
+*/
+#travel {
+    background-image: url("../images/arkansas-hot-springs-fountain.jpg");
+    background-size: cover;
+}
+
+#travel .items div {
+    width: 400px;
+}
+
+#travel a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.opacity {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* RESPONSIVE LAYOUT ******************************************
+*/
+@media only screen and (max-width: 1050px) {
+    header h1 {
+        font-size: 6em;
+    }
+
+    header h2 {
+        font-size: 3em;
+    }
+
+    nav li a {
+        padding: 25px 25px;
+        font-size: 1em;
+    }
+
+    .carousel {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .carousel h2 {
+        font-size: 3em;
+    }
+
+    #travel .items div {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header h1 {
+        font-size: 4em;
+    }
+
+    header h2 {
+        font-size: 2em;
+    }
+
+    .carousel {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .carousel h2 {
+        font-size: 2em;
+    }
+}

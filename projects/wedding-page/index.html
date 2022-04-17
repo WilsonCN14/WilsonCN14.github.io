@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8eab1b87c1.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Wedding Page</title>
+</head>
+<body>
+
+    <!------- SLIDE SHOW, TITLE, and NAV BAR ------->
+    <header>
+        <img class="headerPic" src="images/heart-hands.jpg" alt="Couple forming heart shape with their hands">
+        <img class="headerPic" src="images/jump.jpg" alt="Girl jumping into guys arms">
+        <img class="headerPic" src="images/lake.jpg" alt="Couple sitting on rock next to lake">
+        <img class="headerPic" src="images/sillouette.jpg" alt="Silhouette of couple riding bikes and holding hands at sunset">
+        <div class="title">
+            <h1>Jane & John</h1>
+            <h2>Are getting married 1st April 2022</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#invitation">Invitation</a></li>
+                <li><a href="#ourStory">Our Story</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#travel">Travel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------- INVITATION TO WEDDING ------->
+    <section class="normalDisplay" id="invitation">
+        <div class="heading">
+            <h2>You are Invited</h2>
+            <h3>Please join us for our wedding ceremony on 1st April 2022</h3>
+        </div>
+ 
+        <div class="items">
+            <div>
+                <i class="fa-solid fa-calendar-days fa-4x"></i>
+                <h3>When</h3>
+                <h4>Please arrive before 4pm on 1st April 2022</h4>
+            </div>
+    
+            <div>
+                <i class="fa-solid fa-circle-user fa-4x"></i>
+                <h3>Who</h3>
+                <h4>Friends and family</h4>
+            </div>
+    
+            <div>
+                <i class="fa-solid fa-location-dot fa-4x"></i>
+                <h3>Where</h3>
+                <h4>1675 Shady Grove Rd.</h4> 
+                <h4>Hot Springs, Arkansas 71903</h4>
+            </div>
+        </div>
+    </section>
+
+    <!------- COUPLE'S STORY ------->
+    <section id="ourStory">
+        <div class="heading">
+            <h2>Our Story</h2>
+        </div>
+
+        <!-- Non-automatic Carousel with arrows going to next story. Can also drag side-to-side to move -->
+        <div class="carousel">
+            <div class="chapter">
+                <p class="date">31st December 2019</p>
+                <h2>Chapter 1: Our First Meeting</h2>
+                <p class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum esse magnam voluptate quasi iure optio molestiae vel velit numquam sint, eligendi assumenda enim blanditiis, vitae nemo adipisci tempora, corporis nobis?</p>
+    
+                <div>
+                    <span class="next" onclick="nextChapter(1)">Go to Chapter 2 &gt;</span>
+                </div>
+            </div>
+    
+            <div class="chapter">
+                <p class="date">27th February 2020</p>
+                <h2>Chapter 2: Our First Date</h2>
+                <p class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum esse magnam voluptate quasi iure optio molestiae vel velit numquam sint, eligendi assumenda enim blanditiis, vitae nemo adipisci tempora, corporis nobis?</p>
+    
+                <div>
+                    <span class="prev" onclick="nextChapter(-1)">&lt; Go back to Chapter 1</span>
+                    <span class="next" onclick="nextChapter(1)">Go to Chapter 3 &gt;</span>
+                </div>
+            </div>
+    
+            <div class="chapter">
+                <p class="date">1st January 2022</p>
+                <h2>Chapter 3: Our Proposal</h2>
+                <p class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum esse magnam voluptate quasi iure optio molestiae vel velit numquam sint, eligendi assumenda enim blanditiis, vitae nemo adipisci tempora, corporis nobis?</p>
+
+                <div>
+                    <span class="prev" onclick="nextChapter(-1)">&lt; Go back to Chapter 2</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------- WEDDING EVENTS ------->
+    <section class="normalDisplay"  id="events">
+        <div class="heading">
+            <h2>Wedding Events</h2>
+        </div>
+
+        <div class="items">
+            <div>
+                <i class="fa-solid fa-ring fa-4x"></i>
+                <h3>Ceremony Begins</h3>
+                <h4>4:00 PM</h4>
+            </div>
+    
+            <div>
+                <i class="fa-solid fa-martini-glass-citrus fa-4x"></i>
+                <h3>Cocktail Hour</h3>
+                <h4>5:30 PM</h4>
+            </div>
+    
+            <div>
+                <i class="fa-solid fa-utensils fa-4x"></i>
+                <h3>Dinner Served</h3>
+                <h4>6:30 PM</h4>
+            </div>
+    
+            <div>
+                <i class="fa-solid fa-cake-candles fa-4x"></i>
+                <h3>Cake Served</h3>
+                <h4>7:30 PM</h4>
+            </div>
+    
+            <div>
+                <i class="fa-solid fa-music fa-4x"></i>
+                <h3>Dancing Hour</h3>
+                <h4>8:00 PM</h4>
+            </div>  
+        </div>
+    </section>
+
+    <!------- TRAVEL HELP ------->
+    <section class="normalDisplay"  id="travel">
+        <div class="opacity">
+            <div class="heading">
+                <h2>Travel Details</h2>
+            </div>
+    
+            <div class="items">
+                <div>
+                    <h2>Hotel</h2>
+                    <h3>We are staying at The Waters Hot Springs, Tapestry Collection by Hilton</h3>
+                    <a href="https://www.hilton.com/en/hotels/hottsup-the-waters-hot-springs/?SEO_id=GMB-AMER-UP-HOTTSUP&y_source=1_MTc1ODU4OTYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D">Visit Website</a>
+                </div>
+        
+                <div>
+                    <h2>City Guide</h2>
+                    <h3>Check out things to do during your visit</h3>
+                    <a href="https://www.hotsprings.org/blog/hot-springs-travel-guide/">Visit Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
